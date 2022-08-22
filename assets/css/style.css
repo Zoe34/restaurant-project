@@ -2,6 +2,7 @@
     display: block;
     margin: 0 auto;
     padding-top: 5px;
+    text-align: center;
 }
 
 label{
@@ -11,4 +12,13 @@ label{
 
 textarea{
     padding-top: 5px;
+}
+
+.welcome-sign{
+    text-align: center;
+}
+
+ul{
+    text-align: center;
+    list-style:none;
 }
