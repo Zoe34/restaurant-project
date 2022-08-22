@@ -19,34 +19,34 @@
     <header>
         <div>
             <div>
-                <h1 class="welcome-sign">Welcome to our restaurant!</h1>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#">Menu</a>
-                        </li>
-                        <li>
-                            <a href="#">Opening Times</a>
-                        </li>
-                        <li>
-                            <a href="#">Bookings</a>
-                        </li>
-                    </ul>
-                </nav>
+                <h1 class="welcome-sign center">Welcome to our restaurant!</h1>
+                <div class="row">
+                    <div class="col">
+                        <ul class="center form-container">
+                            <li class="col-3 center menu-elements">
+                                <a href="#">Menu</a>
+                            </li>
+                            <li class="col-3 center menu-elements">
+                                <a href="#">Opening Times</a>
+                            </li>
+                            <li class="col-3 center menu-elements">
+                                <a href="#">Bookings</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
     <section>
         <div>
-            <div>
-                <form action="#">
-                    <label for="fname" name="fname" class="form">First Name:</label>
-                    <input type="text" class="form">
-                    <label for="lname" name="lname" class="form">Last Name:</label>
-                    <input type="text" class="form">
-                    <textarea name="moreinfo" class="form" id="moreinfo" cols="30" rows="10"
+            <div class="row">
+                <form class="center" action="#">
+                    <input type="text" class="col-12 fname form" placeholder="Name" required>
+                    <input type="text" class="col-12 email form" placeholder="Email" required>
+                    <textarea name="moreinfo" class="col-12 more-info form" id="moreinfo" cols="30" rows="10"
                         placeholder="Anything else you'd like us to know about?..."></textarea>
-                    <input type="submit" value="submit" class="form">
+                    <input type="submit" value="submit" class="col-12 submit-button form" required>
                 </form>
             </div>
         </div>
