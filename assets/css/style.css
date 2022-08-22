@@ -16,6 +16,12 @@ form {
     margin-top: 10px;
 }
 
+.entry-drink {
+    margin-top: 10px;
+    color: #0e0d0d;
+    text-align: center;
+}
+
 .center {
     text-align: center;
     margin: 0 auto;
