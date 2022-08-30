@@ -55,3 +55,8 @@ textarea {
 footer i {
     font-size: large;
 }
+
+.blue-text {
+    font-size: large;
+    color: blue;
+}
