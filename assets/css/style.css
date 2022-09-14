@@ -5,10 +5,22 @@
     overflow-x: hidden;
 }
 
+.hero-image {
+    background: url('../images/images/spaghetti-1932466_1920.jpg') no-repeat center center;
+    
+
+}
+
 .center {
     text-align: center;
     margin: 0 auto;
     padding: 10px 0;
+    list-style: none;
+    color: black;
+}
+
+a:link{
+    text-decoration: none;
 }
 
 ul {
@@ -25,6 +37,8 @@ ul {
 
 .menu-elements {
     display: inline-block;
+    color: black;
+
 }
 
 /*------------------Form*/
@@ -76,12 +90,6 @@ footer i {
     color: black;
 }
 
-.container .icons {
-    text-align: center;
-    background-color: rgb(243, 209, 165);
-    height: 50px;
-}
-
 .footer .icons ul {
     margin: 0 auto;
     bottom: fixed;
@@ -90,6 +98,25 @@ footer i {
     
 }
 
+.icons i {
+    padding: 2%;
+}
+
+.container{
+    width: 100%;
+}
+
 .icons li i{
     margin: 0 auto;
+    padding: 10px;
+}
+
+footer {
+    width: 100%;
+    margin: 0;
+    background-color: rgba(74, 63, 63, 0.217);
+}
+
+#footer {
+    position: absolute;
 }
