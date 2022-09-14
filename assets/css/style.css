@@ -60,3 +60,7 @@ footer i {
     font-size: large;
     color: blue;
 }
+
+.container {
+    text-align: center;
+}
