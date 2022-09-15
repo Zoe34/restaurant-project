@@ -94,9 +94,16 @@ textarea {
 .next-button{
     align-items: center;
     margin-bottom: 60px;
-    font-size: 130%;
+    font-size: 170%;
     color:beige;
     border-width: 3px;
+    background-color: rgba(0, 0, 0, 0.333);
+}
+
+/*-------------------allergies*/
+
+.done {
+    margin-bottom: 60px;
 }
 
 /*-------------------Footer*/
