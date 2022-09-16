@@ -1,4 +1,7 @@
 
-$('next-button').hover(function(){
-    $('next-button').css('background-color', 'purple');
-});
+$(document).ready(function(){
+    $('input').mouseenter("hover", function(){
+        $('input').addClass('.no-border');
+    });
+})
+    

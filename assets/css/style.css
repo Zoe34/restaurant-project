@@ -61,6 +61,10 @@ ul {
     text-align: center;
 }
 
+.no-border{
+    border: none;
+}
+
 form {
     text-align: center;
 }
