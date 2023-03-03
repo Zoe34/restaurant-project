@@ -10,12 +10,13 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Booking Page</title>
 </head>
 
 <body>
+    <!--Main page-->
     <header>
         <div>
             <div class="row">
@@ -25,62 +26,40 @@
                 <div class="col-12 menu-elements navbar">
                     <ul class="center form-container dark-background">
                         <li class="col-3 center menu-elements">
-                            <a href="#" class="menu-elements">Menu</a>
+                            <a href="{{ url_for('index') }}" class="menu-elements">Home</a>
                         </li>
                         <li class="col-3 center menu-elements">
-                            <a href="#" class="menu-elements">Opening Times</a>
+                            <a href="{{ url_for('allergies') }}" class="menu-elements">Allergies</a>
                         </li>
                         <li class="col-3 center menu-elements">
-                            <a href="#" class="menu-elements">Directions</a>
+                            <a href="{{ url_for('drinks') }}" class="menu-elements">Drinks</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
-
-    <h3 class="center">Do you or any person in your group have any of the allergies below?</h3>
-
-    <div class="col-12 center pageTwo">
-
-        <input type="checkbox" id="nuts" name="allergies" value="nuts">
-        <label for="nuts">Nuts</label><br>
-
-        <input type="checkbox" id="milk" name="allergies" value="milk">
-        <label for="milk">Milk</label><br>
-
-        <input type="checkbox" id="soya" name="allergies" value="soya">
-        <label for="soya">Soya</label><br>
-
-        <input type="checkbox" id="eggs" name="allergies" value="eggs">
-        <label for="eggs">Eggs</label><br>
-
-        <input type="checkbox" id="fish" name="allergies" value="fish">
-        <label for="fish">Fish</label><br>
-
-        <input type="checkbox" id="wheat" name="allergies" value="wheat">
-        <label for="wheat">Wheat</label><br>
-
-        <input type="checkbox" id="meat" name="allergies" value="meat">
-        <label for="meat">Meat</label><br>
-
-        <input type="checkbox" id="seeds" name="allergies" value="seeds">
-        <label for="seeds">Seeds, e.g. sesame/poppy</label><br>
-
-        <input type="checkbox" id="shellfish" name="allergies" value="shellfish">
-        <label for="shellfish">Shellfish</label><br>
-
-        <input type="checkbox" id="none" name="allergies" value="none">
-        <label for="none">No allergies</label><br>
-
-    </div>
-
-    <div class="col-6 center">
-        <a href="index.html">
-            <button type="button" class="col-5 center done">Done</button>
-        </a>
-    </div>
-
+    <section class="hero-image">
+        <div>
+            <div class="row">
+                <form class="col-6 center" action="#">
+                    <input type="text" class="col-12 fname form no-border" placeholder="Name" required>
+                    <input type="text" class="col-12 email form no-border" placeholder="Email" required>
+                    <textarea name="moreinfo" class="col-12 more-info form" id="moreinfo" cols="30" rows="10"
+                        placeholder="Anything else you'd like us to know about?..."></textarea>
+                </form>
+            </div>
+            <div class="row">
+                <a href="drinks.html" class="center entry-drink col-6">Choose your entry drink</a>
+            </div>
+            <div class="row">
+                <a href="allergies.html" class="center allergy col-6">Allergy information</a>
+            </div>
+            <div class="col-12 center">
+                <button href="#" type="button" class="col-5 btn btn-outline-dark next-button">Next</button>
+            </div>
+        </div>
+    </section>
     <!--Footer-->
     <footer id="footer">
         <div class="container">

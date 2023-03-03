@@ -25,13 +25,13 @@
                 <div class="col-12 menu-elements navbar">
                     <ul class="center form-container dark-background">
                         <li class="col-3 center menu-elements">
-                            <a href="#" class="menu-elements">Menu</a>
+                            <a href="{{ url_for('index') }}" class="menu-elements">Home</a>
                         </li>
                         <li class="col-3 center menu-elements">
-                            <a href="#" class="menu-elements">Opening Times</a>
+                            <a href="{{ url_for('allergies') }}" class="menu-elements">Allergies</a>
                         </li>
                         <li class="col-3 center menu-elements">
-                            <a href="#" class="menu-elements">Directions</a>
+                            <a href="{{ url_for('drinks') }}" class="menu-elements">Drinks</a>
                         </li>
                     </ul>
                 </div>
