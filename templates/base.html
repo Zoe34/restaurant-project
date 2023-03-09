@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Booking Page</title>
+</head>
+
+<body>
+    <!--Main page-->
+    <header>
+        <div>
+            <div class="row">
+                <h1 class="welcome-sign center">Welcome to our restaurant!</h1>
+            </div>
+            <div class="row navbar">
+                <div class="col-12 menu-elements navbar">
+                    <ul class="center form-container dark-background">
+                        <li class="col-3 center menu-elements">
+                            <a href="{{ url_for('index') }}" class="menu-elements">Home</a>
+                        </li>
+                        <li class="col-3 center menu-elements">
+                            <a href="{{ url_for('allergies') }}" class="menu-elements">Allergies</a>
+                        </li>
+                        <li class="col-3 center menu-elements">
+                            <a href="{{ url_for('drinks') }}" class="menu-elements">Drinks</a>
+                        </li>
+                    </ul>
+                </div>
+
+                {% block content %}
+                    insert here
+                {% endblock %}
+
+            </div>
+        </div>
+    </header>
+    <section class="hero-image">
+        <div>
+            <div class="row">
+                <form class="col-6 center" action="#">
+                    <input type="text" class="col-12 fname form no-border" placeholder="Name" required>
+                    <input type="text" class="col-12 email form no-border" placeholder="Email" required>
+                    <textarea name="moreinfo" class="col-12 more-info form" id="moreinfo" cols="30" rows="10"
+                        placeholder="Anything else you'd like us to know about?..."></textarea>
+                </form>
+            </div>
+            <div class="row">
+                <a href="drinks.html" class="center entry-drink col-6">Choose your entry drink</a>
+            </div>
+            <div class="row">
+                <a href="allergies.html" class="center allergy col-6">Allergy information</a>
+            </div>
+            <div class="col-12 center">
+                <button href="#" type="button" class="col-5 btn btn-outline-dark next-button">Next</button>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer id="footer">
+        <div class="container">
+            <div class="row footer">
+                <div class="col-3 icons">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3 icons">
+                    <ul>
+                        <li>
+                            <a
+                                href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F%3F__coig_login%3D1">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3 icons">
+                    <ul>
+                        <li>
+                            <a href="https://twitter.com/?lang=en" taret="_blank"><i
+                                    class="fa-brands fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3 icons">
+                    <ul>
+                        <li>
+                            <a href="https://www.pinterest.co.uk/"><i class="fa-brands fa-pinterest"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+
+</html>
