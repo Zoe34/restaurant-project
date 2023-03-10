@@ -9,8 +9,8 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def index():
-    return render_template('index.html')
+def base():
+    return render_template('base.html')
 
 
 @app.route('/allergies')
@@ -21,6 +21,8 @@ def allergies():
 @app.route('/drinks')
 def drinks():
     return render_template('drinks.html')
+
+
     
 
 if __name__ == '__main__':
