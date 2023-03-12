@@ -12,55 +12,31 @@
 </head>
 
 <body>
-    <!--Main page-->
-    <header class="masthead">
+    <!--Main page navbar-->
+    <header class="masthead" style="background-image: url('https://ifamagazine.com/wp-content/uploads/2021/05/spaghetti-1932466_1920.jpg');">
         <div>
             <div class="row">
-                <h1 class="welcome-sign center">Welcome to our restaurant!</h1>
+                <h1 class="welcome-sign center">Welcome to Good Foods!</h1>
             </div>
             <div class="row navbar">
                 <div class="col-12 menu-elements navbar">
                     <ul class="center form-container dark-background">
-                        <li class="col-3 center menu-elements">
+                        <li class="col-3 center menu-elements nav-item">
                             <a href="{{ url_for('index') }}" class="menu-elements">Home</a>
                         </li>
-                        <li class="col-3 center menu-elements">
+                        <li class="col-3 center menu-elements nav-item">
                             <a href="{{ url_for('allergies') }}" class="menu-elements">Allergies</a>
                         </li>
-                        <li class="col-3 center menu-elements">
+                        <li class="col-3 center menu-elements nav-item">
                             <a href="{{ url_for('drinks') }}" class="menu-elements">Drinks</a>
                         </li>
                     </ul>
                 </div>
-
-                {% block content %}
-                insert here
-                {% endblock %}
-
             </div>
         </div>
     </header>
-    <section class="hero-image">
-        <div>
-            <div class="row">
-                <form class="col-6 center" action="#">
-                    <input type="text" class="col-12 fname form no-border" placeholder="Name" required>
-                    <input type="text" class="col-12 email form no-border" placeholder="Email" required>
-                    <textarea name="moreinfo" class="col-12 more-info form" id="moreinfo" cols="30" rows="10"
-                        placeholder="Anything else you'd like us to know about?..."></textarea>
-                </form>
-            </div>
-            <div class="row">
-                <a href="drinks.html" class="center entry-drink col-6">Choose your entry drink</a>
-            </div>
-            <div class="row">
-                <a href="allergies.html" class="center allergy col-6">Allergy information</a>
-            </div>
-            <div class="col-12 center">
-                <button href="#" type="button" class="col-5 btn btn-outline-dark next-button">Next</button>
-            </div>
-        </div>
-    </section>
+    {% block content %}
+    {% endblock %}
     <!--Footer-->
     <footer id="footer">
         <div class="container">
@@ -96,16 +72,23 @@
                             <a href="https://www.pinterest.co.uk/"><i class="fa-brands fa-pinterest"></i></a>
                         </li>
                     </ul>
+                    <p class="copyright text-muted">Copyright &copy; Good Foods <span id="copyright"></span></p>
                 </div>
             </div>
         </div>
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="{{  url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css')}}"></script>
-    <script src="{{  url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
+    <!-- Template for styling-->
     <script src="{{  url_for('static', filename='js/clean-blog.min.js')}}"></script>
+
+    <!-- Copyright tag-->
+    <script>
+        $('#copyright').text(new Date().getFullYear());
+    </script>
 </body>
 
 </html>

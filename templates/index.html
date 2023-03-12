@@ -1,4 +1,25 @@
 {% extends 'base.html' %}
 {% block content %}
-    <h1>Home</h1>
+<section class="hero-image">
+    <div>
+        <h2>Home</h2>
+        <div class="row">
+            <form class="col-6 center" action="#">
+                <input type="text" class="col-12 fname form no-border" placeholder="Name" required>
+                <input type="text" class="col-12 email form no-border" placeholder="Email" required>
+                <textarea name="moreinfo" class="col-12 more-info form" id="moreinfo" cols="30" rows="10"
+                    placeholder="Anything else you'd like us to know about?..."></textarea>
+            </form>
+        </div>
+        <div class="row">
+            <a href="drinks.html" class="center entry-drink col-6">Choose your entry drink</a>
+        </div>
+        <div class="row">
+            <a href="allergies.html" class="center allergy col-6">Allergy information</a>
+        </div>
+        <div class="col-12 center">
+            <button href="#" type="button" class="col-5 btn btn-outline-dark next-button">Next</button>
+        </div>
+    </div>
+</section>
 {% endblock %}
