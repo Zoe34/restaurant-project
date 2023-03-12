@@ -60,40 +60,33 @@ ul {
 }
 
 form {
-    text-align: center;
+    text-align: center;;
 }
 
 .fname, .email, .more-info, .submit-button {
     margin: 0 auto;
     margin-top: 10px;
+    border:3px solid #000000
 }
 
 textarea {
     padding-top: 5px;
 }
 
-.entry-drink, .allergy {
+.allergy {
     margin-top: 10px;
-    color: #fcfbd9;
+    color: black;
     text-align: center;
     margin-bottom: 30px;
     font-size: 200%;
-}
-
-.entry-drink:hover, .allergy:hover {
-    color:rgb(75, 190, 75);
-}
-
-.more-info {
-    border: none;
 }
 
 /*-------------------Submit button*/
 .next-button{
     align-items: center;
     margin-bottom: 60px;
-    font-size: 170%;
-    color:beige;
+    font-size: 100%;
+    color: white;
     border-width: 3px;
     background-color: #000000;
 }
@@ -114,7 +107,7 @@ textarea {
 
 footer i {
     font-size: large;
-    margin-top: 40px;
+    margin-top: 10px;
     
 }
 
@@ -126,7 +119,7 @@ footer i {
 .footer .icons ul {
     margin: 0 auto;
     bottom: fixed;
-    bottom: 5%;
+    bottom: 2%;
     text-align: center;
     
 }
@@ -139,7 +132,11 @@ footer i {
     margin: 0 auto;
     padding: 10px;
     color:beige;
-    font-size: 170%;
+    font-size: 100%;
+}
+
+.icons{
+    padding: 0;
 }
 
 footer {
@@ -151,4 +148,5 @@ footer {
 #footer {
     position: fixed;
     bottom: 0;
+    padding: 10px 0 10px;
 }

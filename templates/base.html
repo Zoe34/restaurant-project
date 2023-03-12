@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="{{  url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css')  }}">
+    <link rel="stylesheet" href="{{  url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css')  }}" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{  url_for('static', filename='css/clean-blog.min.css')  }}" type="text/css">
+    <link rel="stylesheet" href="{{  url_for('static', filename='css/style.css')  }}" type="text/css">
 
-    <link rel="stylesheet" href="{{  url_for('static', filename='css/clean-blog.min.css')  }}">
     <title>Booking Page</title>
 </head>
 
@@ -25,10 +26,10 @@
                             <a href="{{ url_for('index') }}" class="menu-elements">Home</a>
                         </li>
                         <li class="col-3 center menu-elements nav-item">
-                            <a href="{{ url_for('allergies') }}" class="menu-elements">Allergies</a>
+                            <a href="{{ url_for('menu') }}" class="menu-elements">Menu</a>
                         </li>
                         <li class="col-3 center menu-elements nav-item">
-                            <a href="{{ url_for('drinks') }}" class="menu-elements">Drinks</a>
+                            <a href="{{ url_for('directions') }}" class="menu-elements">Directions</a>
                         </li>
                     </ul>
                 </div>

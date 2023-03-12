@@ -13,15 +13,19 @@ def index():
     return render_template('index.html')
 
 
+@app.route('/menu')
+def menu():
+    return render_template('menu.html')
+
+
+@app.route('/directions')
+def directions():
+    return render_template('directions.html')
+    
+
 @app.route('/allergies')
 def allergies():
     return render_template('allergies.html')
-
-
-@app.route('/drinks')
-def drinks():
-    return render_template('drinks.html')
-    
 
 if __name__ == '__main__':
     app.run(
