@@ -2,7 +2,7 @@ import os
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 from taskmanager import app, db
-
+from taskmanager.models import Category, Task
 
 if os.path.exists('env.py'):
     import env
