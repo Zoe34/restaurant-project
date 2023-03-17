@@ -4,14 +4,6 @@ from flask_sqlalchemy import SQLAlchemy
 from taskmanager import app, db
 from taskmanager.database import Category, Task
 
-#def create_app():
- #   app = Flask(__name__)
-
-  #  with app.app_context():
-   #     init_db()
-
-    #return app
-
 if os.path.exists('env.py'):
     import env
 app = Flask(__name__)
@@ -20,11 +12,6 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template('index.html')
-
-
-@app.route('/menu')
-def menu():
-    return render_template('menu.html')
 
 
 @app.route('/directions')

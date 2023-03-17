@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="{{  url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css')  }}" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{  url_for('static', filename='css/clean-blog.min.css')  }}" type="text/css">
     <link rel="stylesheet" href="{{  url_for('static', filename='css/style.css')  }}" type="text/css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+]
     <title>Booking Page</title>
 </head>
 
@@ -17,16 +16,13 @@
     <header class="masthead" style="background-image: url('https://ifamagazine.com/wp-content/uploads/2021/05/spaghetti-1932466_1920.jpg');">
         <div>
             <div class="row">
-                <h1 class="welcome-sign center">Welcome to Good Foods!</h1>
+                <h1 href="{{  url_for('index')  }}" class="white">Welcome to Good Foods!</h1>
             </div>
-            <div class="row navbar">
-                <div class="col-12 menu-elements navbar">
-                    <ul class="center form-container dark-background">
-                        <li class="col-3 center menu-elements nav-item">
-                            <a href="{{ url_for('index') }}" class="menu-elements">Home</a>
-                        </li>
-                        <li class="col-3 center menu-elements nav-item">
-                            <a href="{{ url_for('menu') }}" class="menu-elements">Menu</a>
+            <div class="nav-wrapper">
+                <div class="brand-logo right">
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li>
+                            <a href="{{ url_for('index') }}">Home</a>
                         </li>
                         <li class="col-3 center menu-elements nav-item">
                             <a href="{{ url_for('directions') }}" class="menu-elements">Directions</a>
@@ -79,9 +75,6 @@
         </div>
     </footer>
 
-    <!-- Bootstrap core JavaScript -->
-	<script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
-	<script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
     <!-- Template for styling-->
     <script src="{{  url_for('static', filename='js/clean-blog.min.js')}}"></script>
@@ -90,6 +83,8 @@
     <script>
         $('#copyright').text(new Date().getFullYear());
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="{{  url_for('static', filename='js/script.js')}}"></script>
 </body>
 
 </html>
