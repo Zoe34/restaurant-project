@@ -1,6 +1,7 @@
 import os
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
+from taskmanager import app, db
 
 
 if os.path.exists('env.py'):
