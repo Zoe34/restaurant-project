@@ -6,6 +6,11 @@ The page allows the customer to book a place at a restaurant, choose an entry dr
 Link to page: 
 
 ## Features
+Booking system:
+
+Menu and Drinks
+
+
 
 ### Existing features
 
